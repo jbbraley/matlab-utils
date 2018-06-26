@@ -10,7 +10,7 @@ function startup
     
     %% add desired folders to matlab search path
     
-    root = 'C:\Users\John\repos'; % paths to add
+    root = 'C:\Users\John\Projects_Git'; % paths to add
     
     % folders to add
     folders = { 'matlab-utils', ...
