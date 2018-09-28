@@ -9,7 +9,7 @@ classdef model < handle
 
 %% object properties
 	properties
-        fun % handle for function (y=f{X,coeff} that predicts y based on  the predictors in X
+        fun % handle for function (y=f{coeff, X} that predicts y based on  the predictors in X
         X % predictors for function
         y % results of function based on predictors in X
         coeff % coefficient in fun
