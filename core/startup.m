@@ -10,11 +10,11 @@ function startup
     
     %% add desired folders to matlab search path
     
-    root = 'C:\Users\John\Projects_Git'; % paths to add
+    root = 'C:\Users\John B\Projects_Git'; % paths to add
     
     % folders to add
     folders = { 'matlab-utils', ...
-				'vma',...
+				'vma','Damp','I76'...
                 };
 
     fprintf('\tAdding paths:\n');
@@ -27,4 +27,7 @@ function startup
     
 	%% change working directory to root
 	cd(root);
+    
+    %% set default fonts
+    set(0,'defaultAxesFontName', 'Calibri>');
 end

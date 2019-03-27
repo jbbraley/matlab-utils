@@ -33,8 +33,12 @@ classdef plotter < handle
 	methods
 		function self = plotter(argin)
             if ischar(argin) % new plot with specified style function
-                self.style = argin;
-                self.(argin);
+                try
+                    self.style = argin;
+                    self.(argin);
+                catch
+                    disp('Invalid style type. Check name.')
+                end
             elseif strcmp(get(argin,'type'),'axes') % construct with existing axes handle
                 self.ah = argin;
                 self.fh = ancestor(argin,'figure');

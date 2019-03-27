@@ -12,7 +12,9 @@ self.ah.Title.String = self.title;
 if ~isempty(self.legend)
    legend(self.ah,self.legend);
 end
- 
+
+% size
+self.fh.Position = [100 50 self.width self.height];
 	
 	
 	
