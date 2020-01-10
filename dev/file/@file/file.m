@@ -40,6 +40,13 @@ classdef file < handle
         end
         
     %% ordinary   
+        function uiget(self,argin)
+            if nargin<2
+                [self.name, self.path] = uigetfile();
+            else
+                [self.name, self.path] = uigetfile(argin);
+            end
+        end
         function edit(self)
         %% edit() - open file for editing in matlab editor 
         % this is equivalent to:

@@ -3,6 +3,7 @@ function startup
     fprintf('Hello, John. Its nice to see you again. \n');
     fprintf('Ill go ahead and initialize some things for you.\n');
 
+
     %% shuffle random numbers
     fprintf('Shuffling random numbers... ');
     rng('shuffle');
@@ -14,8 +15,7 @@ function startup
     
     % folders to add
     folders = { 'matlab-utils', ...
-				'vma','Damp','I76'...
-                };
+				'loadrating'};
 
     fprintf('\tAdding paths:\n');
     for ii = 1:length(folders)

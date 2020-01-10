@@ -36,7 +36,11 @@ classdef funky < file
             % ensure class extension is for m-file
             self.ext = '.m';
         end
-
+        
+    %% ordinary
+    function edit(self)
+        open(self.fullname);
+    end
 	%% dependent methods
 
     end 
