@@ -15,7 +15,7 @@ function startup
     
     % folders to add
     folders = { 'matlab-utils', ...
-				'loadrating'};
+				'BEAST\data\code'};
 
     fprintf('\tAdding paths:\n');
     for ii = 1:length(folders)
